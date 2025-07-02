@@ -12,6 +12,7 @@ app = Dash(
         # This URL can be copied and then parsed on page load
         "state": State("main-url", "hash"),
     },
+    external_scripts=["https://www.googletagmanager.com/gtag/js?id=G-KMWHP8B0DJ"],
 )
 server = app.server
 
