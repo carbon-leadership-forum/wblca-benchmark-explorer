@@ -12,7 +12,6 @@ app = Dash(
         # This URL can be copied and then parsed on page load
         "state": State("main-url", "hash"),
     },
-    external_scripts=["https://www.googletagmanager.com/gtag/js?id=G-KMWHP8B0DJ"],
 )
 server = app.server
 
@@ -28,27 +27,56 @@ app.layout = dbc.Container(
         ),
         dcc.Location(id="main-url"),
         dbc.Row(
-            html.Header(
-                dbc.Row(
-                    dbc.Col(
-                        header,
-                        className="mb-2",
-                        xs=12,
-                        sm=12,
-                        md=12,
-                        lg=12,
-                        xl=10,
-                        xxl=10,
+            [
+                html.Header(
+                    dbc.Row(
+                        dbc.Col(
+                            header,
+                            className="mb-2",
+                            xs=12,
+                            sm=12,
+                            md=12,
+                            lg=12,
+                            xl=10,
+                            xxl=10,
+                        ),
+                        justify="center",
                     ),
-                    justify="center",
                 ),
-            )
+            ]
         ),
         dbc.Row(page_container),
     ],
     fluid=True,
     className="dbc",
 )
+
+app.index_string = """<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        {%metas%}
+        <title>{%title%}</title>
+        {%favicon%}
+        {%css%}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KMWHP8B0DJ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-KMWHP8B0DJ');
+        </script>
+    </head>
+    <body>
+        {%app_entry%}
+        <footer>
+            {%scripts%}
+            {%config%}
+            {%renderer%}
+        </footer>
+    </body>
+</html>"""
 
 
 if __name__ == "__main__":
