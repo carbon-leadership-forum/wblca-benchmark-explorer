@@ -59,6 +59,7 @@ app.index_string = """<!DOCTYPE html>
         <script>window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
+
 gtag('config', 'G-KMWHP8B0DJ');
         </script>
         {%metas%}
