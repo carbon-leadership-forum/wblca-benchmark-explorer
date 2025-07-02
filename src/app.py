@@ -55,18 +55,16 @@ app.index_string = """<!DOCTYPE html>
 <html>
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KMWHP8B0DJ"></script>
+        <script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KMWHP8B0DJ');
+        </script>
         {%metas%}
         <title>{%title%}</title>
         {%favicon%}
         {%css%}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KMWHP8B0DJ"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-KMWHP8B0DJ');
-        </script>
     </head>
     <body>
         {%app_entry%}
