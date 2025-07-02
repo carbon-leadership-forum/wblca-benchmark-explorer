@@ -206,7 +206,8 @@ layout = html.Div(
                             - [Material Use and Embodied Carbon Intensity of New Construction Buildings in North America]
                             (https://doi.org/10.21203/rs.3.rs-6315460/v1)
 
-                            The code for this dashboard can be found at this [Github Repository.]()
+                            The code for this dashboard can be found at this [Github Repository.]
+                            (https://github.com/carbon-leadership-forum/wblca-benchmark-explorer)
                             """,
                         ),
                         html.Br(),
