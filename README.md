@@ -12,7 +12,7 @@ Versions of this repository are tracked using Releases on GitHub.
 ## How to cite
 For any dashboard related citations, please use: 
 ```
-Chafart, M., Benke, B., Jensen, A. (2025). CLF Benchmark Explorer (Version 1.0) [Computer Software]. Carbon Leadership Forum, https://wblca-benchmark-explorer.carbonleadershipforum.org/
+Chafart, M., Benke, B., Jensen, A. (2025). CLF Benchmark Explorer (Version 1.0) [Computer Software]. Carbon Leadership Forum, https://wblca-benchmark-explorer.carbonleadershipforum.org
 ```
 
 For citations relating to the dataset, please cite both the Data Descriptor and the specific data version used:
