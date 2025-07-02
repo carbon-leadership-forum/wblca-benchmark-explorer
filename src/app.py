@@ -21,6 +21,10 @@ header = create_header()
 
 app.layout = dbc.Container(
     [
+        dcc.Store(
+            id="byob_data",
+            storage_type="memory",
+        ),
         dcc.Location(id="main-url"),
         dbc.Row(
             html.Header(
@@ -43,11 +47,6 @@ app.layout = dbc.Container(
     ],
     fluid=True,
     className="dbc",
-)
-app.scripts.append_script(
-    {
-        "external_url": "https://wblca-benchmark-explorer.carbonleadershipforum.org//assets/gtag.js"
-    }
 )
 
 
