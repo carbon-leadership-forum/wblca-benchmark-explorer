@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: 'Source Sans Pro Bold'; 
-    src: url('SourceSansPro-Bold.otf');
+    font-family: 'Source Sans Pro Semibold'; 
+    src: url('SourceSansPro-Semibold.otf');
 }
 
 body {
@@ -13,5 +13,5 @@ body {
 }
 
 strong {
-    font-family: "Source Sans Pro Bold";
+    font-family: "Source Sans Pro Semibold";
 }
